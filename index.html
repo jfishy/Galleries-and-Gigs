@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!-- Josh Fish-->
+<html>
+	<head>
+		<title>Galleries & Gigs</title>
+			
+		<style>
+		#background
+		{
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		z-index:-1;
+		}
+		#contain
+		{
+			
+			width: 25%;
+			text-align: center;
+			margin: auto;
+			border: thin solid;
+			border-radius: 15px;
+			margin-top: 3%;
+			/*background-color:#CCFFCC;*/
+		}
+		.in
+		{
+			padding-top: 2%;
+			padding-bottom: 2%;
+		}
+		#sub
+		{
+		
+			padding-bottom: 2%;
+		}
+		h1
+		{
+			padding-top: 5%;
+			width: 70%;
+			text-align:center;
+			font-size: 100px;
+			font-family: Palatino;
+			margin: auto;
+		}
+		h1 > span
+		{
+			color: #0066CC;
+			font-family:sans-serif;
+		}
+		</style>
+		
+		<script>
+		
+		</script>
+	</head>
+		
+	<body >
+	<!--<img id = "background"src= "images/back.jpg" />-->
+	<h1>Welcome to <span>Galleries & Gigs </span></h1>
+	<div id = 'contain'>
+	
+		
+		<form method = "post" action = "logreg.php">
+			<div class = "in"> <label>Username: <input type = "text" name = "uname" placeholder = "Please enter your username" /></div></label>
+		<div class = "in"> <label>Password: <input type = "password" name = "pword" placeholder = "Please enter your password"/></div></label>
+			
+			<div>
+				<label><input type = "radio" name = "logreg" value = "login" checked /> Login</label> 
+				<label><input type = "radio" name = "logreg" value = "register" /> Register</label>
+			</div>
+			
+			<hr />
+			
+			<div id = "sub">
+				<input type = "submit" />
+			</div>
+			
+		</form>
+		
+
+	</div>
+	</body>
+</html>
